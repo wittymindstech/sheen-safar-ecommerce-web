@@ -1,306 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <title>Sheen Safar — Travel Cabs &  Dry Fruits</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Book safe, comfortable cabs for airport, local and outstation trips. Shop premium dry fruits with doorstep delivery. Enquire or buy instantly on WhatsApp." />
-  <meta name="keywords" content="travel cabs, taxi booking, outstation cab, airport transfer, dry fruits, buy nuts online" />
-  <meta name="robots" content="index,follow" />
-
-  <!-- OG -->
-  <meta property="og:title" content="Sheen Safar — Travel Cabs & Dry Fruits" />
-  <meta property="og:description" content="Book cabs & buy premium dry fruits in one place." />
-  <meta property="og:image" content="assets/img/hero.jpg" />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://wittymindstech.github.io/sheen-safar-ecommerce-web/" />
-
-  <!-- Fonts & CSS -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="style.css" />
-  <link rel="icon" href="assets/img/favicon.png" />
-
-  <!-- JSON-LD -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Organization",
-    "name": "Sheen Safar",
-    "url": "https://wittymindstech.github.io/sheen-safar-ecommerce-web/",
-    "logo": "https://wittymindstech.github.io/sheen-safar-ecommerce-web/assets/img/favicon.png",
-    "sameAs": [],
-    "hasOfferCatalog": {
-      "@type": "OfferCatalog",
-      "name": "Services & Products",
-      "itemListElement": [
-        { "@type": "Offer", "itemOffered": {"@type": "Service", "name":"Cab Booking (Airport / Local / Outstation)"} },
-        { "@type": "Offer", "itemOffered": {"@type": "Product", "name":"Premium Dry Fruits"} }
-      ]
-    }
-  }
-  </script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sheen Safar - Original Kashmiri Products </title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; line-height: 1.6; }
+    header { background: url('lake-header.jpg') no-repeat center center/cover; color: #fff; padding: 120px 20px; text-align: center; }
+    header h1 { margin: 0; font-size: 3em; text-shadow: 2px 2px #000; }
+    header p { font-size: 1.2em; text-shadow: 1px 1px #000; }
+    nav { background: #5e4b4b; color: #fff; text-align: center; padding: 10px; }
+    nav a { color: #fff; margin: 0 10px; text-decoration: none; }
+    section { padding: 40px 20px; max-width: 1000px; margin: auto; }
+    .products, .services, .videos { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; }
+    .item { background: #f9f9f9; padding: 20px; border-radius: 8px; text-align: center; }
+    img { max-width: 100%; border-radius: 8px; }
+    footer { background: #3b2c2c; color: #fff; text-align: center; padding: 20px; }
+    .contact { text-align: center; margin: 20px 0; }
+    .whatsapp { background: #25D366; color: #fff; padding: 10px 20px; text-decoration: none; border-radius: 5px; display: inline-block; }
+  </style>
 </head>
 <body>
-  <!-- NAV -->
-  <header class="nav-wrap">
-    <nav class="nav container">
-      <a class="brand" href="#">
-        <span class="brand-accent">Sheen</span> Safar
-      </a>
-
-      <button class="hamburger" id="menuBtn" aria-label="Open menu" aria-expanded="false">
-        <span></span><span></span><span></span>
-      </button>
-
-      <div class="nav-links" id="navLinks">
-        <a href="#cabs">Cabs</a>
-        <a href="#vehicles">Vehicles</a>
-        <a href="#fruits">Dry Fruits</a>
-        <a href="#contact">Contact</a>
-        <a class="btn btn-primary" data-wa data-wa-text="General Enquiry">Enquire</a>
-      </div>
-    </nav>
+  <header>
+    <h1>Sheen Safar</h1>
+    <p>Original Kashmiri Saffron, Dry Fruits, Handicrafts, Homestay & Cab Services</p>
   </header>
-
-  <!-- HERO -->
-  <section class="hero">
-    <img class="hero-img" src="assets/img/hero.jpg" alt="Mountain road and a cab with premium dry fruits banner" />
-    <div class="hero-content container">
-      <h1>Book Cabs & Buy Premium Dry Fruits</h1>
-      <p>Airport • Local • Outstation | Almonds • Cashews • Raisins • Walnuts</p>
-      <div class="cta-row">
-        <a class="btn btn-primary" href="#cabs">Cab Enquiry</a>
-        <a class="btn btn-secondary" href="#fruits">Buy Dry Fruits</a>
+  <nav>
+    <a href="#products">Products</a>
+    <a href="#videos">Videos</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <section id="products">
+    <h2>Our Products & Services</h2>
+    <div class="products">
+      <div class="item">
+        <img src="kesar.png" alt="Saffron">
+        <h3>Original Saffron</h3>
+        <p>1g in a small transparent box - ₹300</p>
+      </div>
+      <div class="item">
+        <img src="kurta.png" alt="Kashmiri Kurtas">
+        <h3>Kashmiri Kurtas</h3>
+        <p>Elegant traditional wear for men and women.</p>
+      </div>
+      <div class="item">
+        <img src="shawl.png" alt="Shawl & Woolen Products">
+        <h3>Shawls & Woolen Products</h3>
+        <p>Authentic Kashmiri woolens to keep you warm.</p>
+      </div>
+      <div class="item">
+        <img src="mat.png" alt="Prayer Mats">
+        <h3>Prayer & House Mats</h3>
+        <p>High quality prayer mats and house decor mats.</p>
+      </div>
+      <div class="item">
+        <img src="kahwa.png" alt="Kahwa Tea">
+        <h3>Kahwa Tea</h3>
+        <p>Traditional Kashmiri beverage for warmth & wellness.</p>
+      </div>
+      <div class="item">
+        <img src="dryfruits.png" alt="Dry Fruits">
+        <h3>Kashmiri Dry Fruits</h3>
+        <p>Premium Quality Original Dry fruits Sourced from Kashmir.</p>
+      </div>
+      <div class="item">
+        <img src="masala.png" alt="Kashmiri Tikka Masala">
+        <h3>Kashmiri Spices</h3>
+        <p>Healthy mixes packed with nutrition and taste.</p>
+      </div>
+      <div class="item">
+        <img src="shilajit.png" alt="Shilajit">
+        <h3>Shilajit</h3>
+        <p>Pure natural Shilajit for health & vitality.</p>
+      </div>
+      <div class="item">
+        <img src="cab.png" alt="Cab Services">
+        <h3>Kashmir Cab Services</h3>
+        <p>Reliable cab services for major tourist spots.</p>
+      </div>
+      <div class="item">
+        <img src="homestay.png" alt="Homestay Services">
+        <h3>Homestay Services</h3>
+        <p>Stay comfortably at scenic homestays in Kashmir with local hospitality.</p>
       </div>
     </div>
-    <div class="hero-gradient"></div>
   </section>
-
-  <!-- CABS -->
-  <section class="section" id="cabs" aria-labelledby="cabs-title">
-    <div class="container">
-      <h2 id="cabs-title">Cab Services</h2>
-      <p class="muted">On-time pickups, polite chauffeurs, clean cars, and transparent pricing.</p>
-
-      <div class="cards">
-        <article class="card">
-          <h3>Airport Transfers</h3>
-          <p>Seamless drops & pickups. We track your flight and add buffer time.</p>
-          <a class="btn btn-primary" data-wa data-wa-text="Cab Enquiry: Airport Transfer">Enquire on WhatsApp</a>
-        </article>
-        <article class="card">
-          <h3>Local Hourly / Day</h3>
-          <p>Flexible hourly rentals for shopping, meetings, and city sightseeing.</p>
-          <a class="btn btn-primary" data-wa data-wa-text="Cab Enquiry: Local Hourly/Day">Enquire on WhatsApp</a>
-        </article>
-        <article class="card">
-          <h3>Outstation Trips</h3>
-          <p>Comfortable intercity rides. One-way or round-trip, as you need.</p>
-          <a class="btn btn-primary" data-wa data-wa-text="Cab Enquiry: Outstation Trip">Enquire on WhatsApp</a>
-        </article>
+  <section id="contact" class="contact">
+    <a class="whatsapp" href="https://wa.me/919113957428" target="_blank">Order Now</a>
+  </section>
+  <section id="videos">
+    <h2>Watch Our Videos</h2>
+    <div class="videos">
+      <div class="item">
+        <iframe width="100%" height="200" src="https://www.youtube.com/embed/ISfdTs1ODGg" title="Saffron Box"></iframe>
+        <p>Original Saffron Packaging</p>
       </div>
-    </div>
-  </section>
-
-  <!-- VEHICLES -->
-  <section class="section alt" id="vehicles" aria-labelledby="vehicles-title">
-    <div class="container">
-      <h2 id="vehicles-title">Vehicles & Seaters</h2>
-      <p class="muted">Pick the perfect ride—sedans for city, SUVs/MPVs for family, Travellers for groups.</p>
-
-      <div class="vehicle-grid">
-        <article class="vehicle-card">
-          <img src="assets/img/veh-dzire.jpg" alt="Swift Dzire sedan" loading="lazy" />
-          <div class="vehicle-body">
-            <h3>Swift Dzire <span class="badge">4+1</span></h3>
-            <ul class="specs">
-              <li>Best for: Airport & city rides</li>
-              <li>Luggage: 2 medium + 2 small</li>
-            </ul>
-            <a class="btn btn-primary" data-wa data-wa-text="Vehicle: Swift Dzire (4+1)">Book</a>
-          </div>
-        </article>
-
-        <article class="vehicle-card">
-          <img src="assets/img/veh-scorpio.jpg" alt="Mahindra Scorpio SUV" loading="lazy" />
-          <div class="vehicle-body">
-            <h3>Scorpio <span class="badge">6/7+1</span></h3>
-            <ul class="specs">
-              <li>Best for: Outstation & rough roads</li>
-              <li>High ground clearance</li>
-            </ul>
-            <a class="btn btn-primary" data-wa data-wa-text="Vehicle: Scorpio (6/7+1)">Book</a>
-          </div>
-        </article>
-
-        <article class="vehicle-card">
-          <img src="assets/img/veh-innova.jpg" alt="Toyota Innova" loading="lazy" />
-          <div class="vehicle-body">
-            <h3>Innova <span class="badge">6/7+1</span></h3>
-            <ul class="specs">
-              <li>Best for: Family & business trips</li>
-              <li>Spacious & smooth</li>
-            </ul>
-            <a class="btn btn-primary" data-wa data-wa-text="Vehicle: Innova (6/7+1)">Book</a>
-          </div>
-        </article>
-
-        <article class="vehicle-card">
-          <img src="assets/img/veh-traveller.jpg" alt="Tempo Traveller 12/17 seater" loading="lazy" />
-          <div class="vehicle-body">
-            <h3>Tempo Traveller <span class="badge">12/17+1</span></h3>
-            <ul class="specs">
-              <li>Best for: Group tours & events</li>
-              <li>High roof • Pushback seats</li>
-            </ul>
-            <a class="btn btn-primary" data-wa data-wa-text="Vehicle: Tempo Traveller (12/17+1)">Book</a>
-          </div>
-        </article>
+      <div class="item">
+        <iframe width="100%" height="200" src="https://www.youtube.com/embed/tI1U1Jw7IwE" title="Dry Fruits Delivery"></iframe>
+        <p>Dry Fruits & Saffron Home Delivery</p>
+      </div>
+      <div class="item">
+        <iframe width="100%" height="200" src="https://www.youtube.com/embed/MTln3_uhC0Y" title="Check Walnuts"></iframe>
+        <p>How to Check Original Walnuts</p>
+      </div>
+      <div class="item">
+        <iframe width="100%" height="200" src="https://www.youtube.com/embed/QwKINYHA6Xg" title="Check Saffron"></iframe>
+        <p>How to Check for Original Saffron</p>
+      </div>
+      <div class="item">
+        <iframe width="100%" height="200" src="https://youtube.com/embed/xstPslK3CJE" title="Book Cabs"></iframe>
+        <p>Book Reliable, Safe & Secure Cab Services</p>
+      </div>
+      <div class="item">
+        <iframe width="100%" height="200" src="https://youtube.com/embed/sfy7622BGxI" title="Book Stay of Your Dreams"></iframe>
+        <p>Book Homestay, Staycations, Hotels of Your Dreams</p>
       </div>
     </div>
   </section>
 
-  <!-- TRIP HIGHLIGHTS -->
-  <section class="section" id="highlights" aria-labelledby="highlights-title">
-    <div class="container">
-      <h2 id="highlights-title">Trip Highlights</h2>
-      <p class="muted">Popular tours we arrange with comfortable vehicles and crafted routes.</p>
-
-      <div class="highlight-grid">
-        <article class="highlight-card">
-          <img src="assets/img/highlight-bhutan.jpg" alt="Bhutan tour" loading="lazy" />
-          <div class="highlight-body">
-            <h3>Bhutan</h3>
-            <p>Thimphu • Paro • Tiger’s Nest — serene monasteries & mountain valleys.</p>
-            <a class="btn btn-outline" data-wa data-wa-text="Tour Enquiry: Bhutan">Enquire</a>
-          </div>
-        </article>
-
-        <article class="highlight-card">
-          <img src="assets/img/highlight-pokhara.jpg" alt="Pokhara tour" loading="lazy" />
-          <div class="highlight-body">
-            <h3>Pokhara (Nepal)</h3>
-            <p>Phewa Lake • Peace Pagoda • Adventure sports with Himalayan views.</p>
-            <a class="btn btn-outline" data-wa data-wa-text="Tour Enquiry: Pokhara">Enquire</a>
-          </div>
-        </article>
-
-        <article class="highlight-card">
-          <img src="assets/img/highlight-sikkim.jpg" alt="Sikkim tour" loading="lazy" />
-          <div class="highlight-body">
-            <h3>Sikkim</h3>
-            <p>Gangtok • Tsomgo Lake • Nathula — lush valleys & high passes.</p>
-            <a class="btn btn-outline" data-wa data-wa-text="Tour Enquiry: Sikkim">Enquire</a>
-          </div>
-        </article>
-
-        <article class="highlight-card">
-          <img src="assets/img/highlight-himachal.jpg" alt="Himachal tour" loading="lazy" />
-          <div class="highlight-body">
-            <h3>Himachal</h3>
-            <p>Shimla • Manali • Kasol — pine forests, snow peaks & cozy cafes.</p>
-            <a class="btn btn-outline" data-wa data-wa-text="Tour Enquiry: Himachal">Enquire</a>
-          </div>
-        </article>
-
-        <article class="highlight-card">
-          <img src="assets/img/highlight-uttarakhand.jpg" alt="Uttarakhand tour" loading="lazy" />
-          <div class="highlight-body">
-            <h3>Uttarakhand</h3>
-            <p>Nainital • Rishikesh • Mussoorie — lakes, temples & the Ganges.</p>
-            <a class="btn btn-outline" data-wa data-wa-text="Tour Enquiry: Uttarakhand">Enquire</a>
-          </div>
-        </article>
-
-        <article class="highlight-card">
-          <img src="assets/img/highlight-rajasthan.jpg" alt="Rajasthan tour" loading="lazy" />
-          <div class="highlight-body">
-            <h3>Rajasthan</h3>
-            <p>Jaipur • Udaipur • Jaisalmer — palaces, lakes & desert safaris.</p>
-            <a class="btn btn-outline" data-wa data-wa-text="Tour Enquiry: Rajasthan">Enquire</a>
-          </div>
-        </article>
-      </div>
-    </div>
+  <section id="contact" class="contact">
+    <h2>Contact Us</h2>
+    <p>Call us: <a href="tel:+919113957428">+91 9113957428</a> | <a href="tel:+919906417787">+91 9906417787</a></p>
+    <a class="whatsapp" href="https://wa.me/919113957428" target="_blank">Chat on WhatsApp</a>
   </section>
 
-  <!-- DRY FRUITS -->
-  <section class="section alt" id="fruits" aria-labelledby="fruits-title">
-    <div class="container">
-      <h2 id="fruits-title">Premium Dry Fruits</h2>
-      <p class="muted">Fresh stock • Hygienic packing • Pan-India delivery</p>
-
-      <div class="product-grid">
-        <article class="product-card">
-          <img src="assets/img/almonds.jpg" alt="Almonds 500g" loading="lazy" />
-          <div class="product-body">
-            <h3>Almonds</h3>
-            <p>Crunchy California almonds. 500g / 1kg packs.</p>
-            <div class="price-row">
-              <span class="price">₹599 / 500g</span>
-              <a class="btn btn-primary" data-buy data-name="Almonds" data-price="599" data-pack="500g">Buy Now</a>
-            </div>
-          </div>
-        </article>
-
-        <article class="product-card">
-          <img src="assets/img/cashews.jpg" alt="Cashews 500g" loading="lazy" />
-          <div class="product-body">
-            <h3>Cashews</h3>
-            <p>Buttery W320 cashews. 500g / 1kg packs.</p>
-            <div class="price-row">
-              <span class="price">₹649 / 500g</span>
-              <a class="btn btn-primary" data-buy data-name="Cashews" data-price="649" data-pack="500g">Buy Now</a>
-            </div>
-          </div>
-        </article>
-
-        <article class="product-card">
-          <img src="assets/img/walnuts.jpg" alt="Walnuts 500g" loading="lazy" />
-          <div class="product-body">
-            <h3>Walnuts</h3>
-            <p>Handpicked walnut kernels. 500g / 1kg packs.</p>
-            <div class="price-row">
-              <span class="price">₹749 / 500g</span>
-              <a class="btn btn-primary" data-buy data-name="Walnuts" data-price="749" data-pack="500g">Buy Now</a>
-            </div>
-          </div>
-        </article>
-
-        <article class="product-card">
-          <img src="assets/img/raisins.jpg" alt="Raisins 500g" loading="lazy" />
-          <div class="product-body">
-            <h3>Raisins</h3>
-            <p>Sweet & soft golden raisins. 500g / 1kg packs.</p>
-            <div class="price-row">
-              <span class="price">₹299 / 500g</span>
-              <a class="btn btn-primary" data-buy data-name="Raisins" data-price="299" data-pack="500g">Buy Now</a>
-            </div>
-          </div>
-        </article>
-      </div>
-
-      <div class="center mt-16">
-        <a class="btn btn-secondary" data-wa data-wa-text="Bulk Order Enquiry: Dry Fruits">Bulk / Corporate Enquiry</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- CONTACT / CTA -->
-  <section class="section" id="contact" aria-label="Contact details">
-    <div class="container cta-box">
-      <h2>We’re Ready When You Are</h2>
-      <p>Cab bookings and product orders are confirmed on WhatsApp. Fast replies guaranteed.</p>
-      <div class="cta-row">
-        <a class="btn btn-primary" data-wa data-wa-text="General Enquiry">Enquire on WhatsApp</a>
-        <a class="btn btn-outline" href="mailto:orders@sheensafar.com?subject=Enquiry&body=Hi%20Sheen%20Safar%2C%0A%0AI%20want%20to%20enquire%20about%3A%20%0A%0AThanks.">Email Us</a>
-      </div>
-      <p class="muted">© <span id="year"></span> Sheen Safar</p>
-    </div>
-  </section>
-
-  <script src="script.js"></script>
+  <footer>
+    <p>&copy; 2025 Sheen Safar. All rights reserved.</p>
+  </footer>
 </body>
 </html>
