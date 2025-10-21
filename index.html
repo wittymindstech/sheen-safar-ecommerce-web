@@ -2,130 +2,353 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Sheen Safar - Original Kashmiri Products </title>
-  <style>
-    body { font-family: Arial, sans-serif; margin: 0; padding: 0; line-height: 1.6; }
-    header { background: url('lake-header.jpg') no-repeat center center/cover; color: #fff; padding: 120px 20px; text-align: center; }
-    header h1 { margin: 0; font-size: 3em; text-shadow: 2px 2px #000; }
-    header p { font-size: 1.2em; text-shadow: 1px 1px #000; }
-    nav { background: #5e4b4b; color: #fff; text-align: center; padding: 10px; }
-    nav a { color: #fff; margin: 0 10px; text-decoration: none; }
-    section { padding: 40px 20px; max-width: 1000px; margin: auto; }
-    .products, .services, .videos { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; }
-    .item { background: #f9f9f9; padding: 20px; border-radius: 8px; text-align: center; }
-    img { max-width: 100%; border-radius: 8px; }
-    footer { background: #3b2c2c; color: #fff; text-align: center; padding: 20px; }
-    .contact { text-align: center; margin: 20px 0; }
-    .whatsapp { background: #25D366; color: #fff; padding: 10px 20px; text-decoration: none; border-radius: 5px; display: inline-block; }
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sheen Safar – Dry Fruits, Tours, Winter Wear & More</title>
+  <meta name="description" content="Shop premium Kashmiri dry fruits & spices, book tours & cabs, winter wear, adventures, hotels & resorts. Fast enquiry on WhatsApp." />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="kesar.png" />
 </head>
 <body>
-  <header>
-    <h1>Sheen Safar</h1>
-    <p>Original Kashmiri Saffron, Dry Fruits, Handicrafts, Homestay & Cab Services</p>
+  <!-- Top Bar -->
+  <div class="topbar">
+    <div class="container">
+      <span>Sheen Safar · Kashmir</span>
+      <div class="topbar-actions">
+        <a class="link" href="tel:+917760666008">Call: +91 77606 66008</a>
+        <a class="link" href="mailto:gaurav.2897@gmail.com">Email</a>
+        <a class="btn btn-ghost btn-xs" href="https://wa.me/917870639642?text=Hi%20Sheen%20Safar%2C%20I%20have%20an%20enquiry.">WhatsApp</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header / Nav -->
+  <header class="header">
+    <div class="container header-inner">
+      <a class="brand" href="#home">Sheen Safar</a>
+      <nav id="nav" class="nav">
+        <a href="#dry-fruits">Dry Fruits</a>
+        <a href="#tours">Tours & Travels</a>
+        <a href="#winter">Winter Wear</a>
+        <a href="#adventures">Adventures</a>
+        <a href="#hotels">Hotels & Resorts</a>
+      </nav>
+      <button id="navToggle" class="nav-toggle" aria-label="Toggle navigation">☰</button>
+    </div>
   </header>
-  <nav>
-    <a href="#products">Products</a>
-    <a href="#videos">Videos</a>
-    <a href="#contact">Contact</a>
-  </nav>
-  <section id="products">
-    <h2>Our Products & Services</h2>
-    <div class="products">
-      <div class="item">
-        <img src="kesar.png" alt="Saffron">
-        <h3>Original Saffron</h3>
-        <p>1g in a small transparent box - ₹300</p>
-      </div>
-      <div class="item">
-        <img src="kurta.png" alt="Kashmiri Kurtas">
-        <h3>Kashmiri Kurtas</h3>
-        <p>Elegant traditional wear for men and women.</p>
-      </div>
-      <div class="item">
-        <img src="shawl.png" alt="Shawl & Woolen Products">
-        <h3>Shawls & Woolen Products</h3>
-        <p>Authentic Kashmiri woolens to keep you warm.</p>
-      </div>
-      <div class="item">
-        <img src="mat.png" alt="Prayer Mats">
-        <h3>Prayer & House Mats</h3>
-        <p>High quality prayer mats and house decor mats.</p>
-      </div>
-      <div class="item">
-        <img src="kahwa.png" alt="Kahwa Tea">
-        <h3>Kahwa Tea</h3>
-        <p>Traditional Kashmiri beverage for warmth & wellness.</p>
-      </div>
-      <div class="item">
-        <img src="dryfruits.png" alt="Dry Fruits">
-        <h3>Kashmiri Dry Fruits</h3>
-        <p>Premium Quality Original Dry fruits Sourced from Kashmir.</p>
-      </div>
-      <div class="item">
-        <img src="masala.png" alt="Kashmiri Tikka Masala">
-        <h3>Kashmiri Spices</h3>
-        <p>Healthy mixes packed with nutrition and taste.</p>
-      </div>
-      <div class="item">
-        <img src="shilajit.png" alt="Shilajit">
-        <h3>Shilajit</h3>
-        <p>Pure natural Shilajit for health & vitality.</p>
-      </div>
-      <div class="item">
-        <img src="cab.png" alt="Cab Services">
-        <h3>Kashmir Cab Services</h3>
-        <p>Reliable cab services for major tourist spots.</p>
-      </div>
-      <div class="item">
-        <img src="homestay.png" alt="Homestay Services">
-        <h3>Homestay Services</h3>
-        <p>Stay comfortably at scenic homestays in Kashmir with local hospitality.</p>
-      </div>
-    </div>
-  </section>
-  <section id="contact" class="contact">
-    <a class="whatsapp" href="https://wa.me/919113957428" target="_blank">Order Now</a>
-  </section>
-  <section id="videos">
-    <h2>Watch Our Videos</h2>
-    <div class="videos">
-      <div class="item">
-        <iframe width="100%" height="200" src="https://www.youtube.com/embed/ISfdTs1ODGg" title="Saffron Box"></iframe>
-        <p>Original Saffron Packaging</p>
-      </div>
-      <div class="item">
-        <iframe width="100%" height="200" src="https://www.youtube.com/embed/tI1U1Jw7IwE" title="Dry Fruits Delivery"></iframe>
-        <p>Dry Fruits & Saffron Home Delivery</p>
-      </div>
-      <div class="item">
-        <iframe width="100%" height="200" src="https://www.youtube.com/embed/MTln3_uhC0Y" title="Check Walnuts"></iframe>
-        <p>How to Check Original Walnuts</p>
-      </div>
-      <div class="item">
-        <iframe width="100%" height="200" src="https://www.youtube.com/embed/QwKINYHA6Xg" title="Check Saffron"></iframe>
-        <p>How to Check for Original Saffron</p>
-      </div>
-      <div class="item">
-        <iframe width="100%" height="200" src="https://youtube.com/embed/xstPslK3CJE" title="Book Cabs"></iframe>
-        <p>Book Reliable, Safe & Secure Cab Services</p>
-      </div>
-      <div class="item">
-        <iframe width="100%" height="200" src="https://youtube.com/embed/sfy7622BGxI" title="Book Stay of Your Dreams"></iframe>
-        <p>Book Homestay, Staycations, Hotels of Your Dreams</p>
+
+  <!-- Hero -->
+  <section id="home" class="hero" style="--hero:url('lake-header.jpg')">
+    <div class="container hero-content">
+      <h1>Kashmir curated for you</h1>
+      <p>Premium dry fruits & spices. Tailor-made tours. Cozy winter wear. Thrilling adventures. Handpicked stays.</p>
+      <div class="hero-cta">
+        <a class="btn btn-primary" href="https://wa.me/917870639642?text=Hi%20Sheen%20Safar%2C%20I%20want%20to%20book%20a%20Kashmir%20cab%20tour.">Book Now</a>
+        <a class="btn btn-outline" href="#categories">Explore Categories</a>
       </div>
     </div>
   </section>
 
-  <section id="contact" class="contact">
-    <h2>Contact Us</h2>
-    <p>Call us: <a href="tel:+919113957428">+91 9113957428</a> | <a href="tel:+919906417787">+91 9906417787</a></p>
-    <a class="whatsapp" href="https://wa.me/919113957428" target="_blank">Chat on WhatsApp</a>
+  <!-- Categories -->
+  <section id="categories" class="section">
+    <div class="container">
+      <h2 class="section-title">Shop & Book by Category</h2>
+      <div class="grid grid-5">
+        <a class="cat-card" href="#dry-fruits">
+          <img src="dryfruits.png" alt="Dry Fruits" />
+          <h3>Dry Fruits</h3>
+        </a>
+        <a class="cat-card" href="#tours">
+          <img src="cab.png" alt="Tours & Travels" />
+          <h3>Tours & Travels</h3>
+        </a>
+        <a class="cat-card" href="#winter">
+          <img src="shawl.png" alt="Winter Wear" />
+          <h3>Winter Wear</h3>
+        </a>
+        <a class="cat-card" href="#adventures">
+          <img src="shilajit.png" alt="Adventures" />
+          <h3>Adventures</h3>
+        </a>
+        <a class="cat-card" href="#hotels">
+          <img src="homestay.png" alt="Hotels & Resorts" />
+          <h3>Hotels & Resorts</h3>
+        </a>
+      </div>
+    </div>
   </section>
 
-  <footer>
-    <p>&copy; 2025 Sheen Safar. All rights reserved.</p>
+  <!-- Dry Fruits -->
+  <section id="dry-fruits" class="section">
+    <div class="container">
+      <div class="section-head">
+        <h2>Dry Fruits & Spices</h2>
+        <a class="btn btn-ghost" href="https://wa.me/917870639642?text=Enquiry%20about%20dry%20fruits%20and%20spices.">Enquire Now</a>
+      </div>
+      <div class="grid grid-4">
+        <div class="card">
+          <img src="kesar.png" alt="Kashmiri Saffron" />
+          <div class="card-body">
+            <h3>Kashmiri Saffron (Kesar)</h3>
+            <p>Pure Mongra threads. Aroma & potency guaranteed.</p>
+            <div class="card-actions">
+              <a class="btn btn-buy" data-whats="Kashmiri Saffron (Kesar)">Buy Now</a>
+              <a class="btn btn-ghost" data-enq="Kashmiri Saffron (Kesar)">Enquire</a>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <img src="kahwa.png" alt="Kehwa Mix" />
+          <div class="card-body">
+            <h3>Kehwa Mix</h3>
+            <p>Traditional Kashmiri tea blend with saffron & spices.</p>
+            <div class="card-actions">
+              <a class="btn btn-buy" data-whats="Kehwa Mix">Buy Now</a>
+              <a class="btn btn-ghost" data-enq="Kehwa Mix">Enquire</a>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <img src="masala.png" alt="Wazwan Masala" />
+          <div class="card-body">
+            <h3>Wazwan Masala</h3>
+            <p>Signature spice blend for authentic Kashmiri dishes.</p>
+            <div class="card-actions">
+              <a class="btn btn-buy" data-whats="Wazwan Masala">Buy Now</a>
+              <a class="btn btn-ghost" data-enq="Wazwan Masala">Enquire</a>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <img src="mat.png" alt="Walnuts & Almonds" />
+          <div class="card-body">
+            <h3>Walnuts & Almonds</h3>
+            <p>Handpicked, premium grade. Bulk orders available.</p>
+            <div class="card-actions">
+              <a class="btn btn-buy" data-whats="Walnuts & Almonds">Buy Now</a>
+              <a class="btn btn-ghost" data-enq="Walnuts & Almonds">Enquire</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tours & Travels -->
+  <section id="tours" class="section section-alt">
+    <div class="container">
+      <div class="section-head">
+        <h2>Tours & Travels (Cabs)</h2>
+        <a class="btn btn-primary" href="https://wa.me/917870639642?text=I%20want%20to%20book%20a%20cab%20in%20Kashmir.">Book Now</a>
+      </div>
+      <div class="grid grid-3">
+        <div class="card">
+          <img src="cab.png" alt="Airport Pickup & Drop" />
+          <div class="card-body">
+            <h3>Airport Pickup & Drop</h3>
+            <p>On-time service. Swift Dzire | Innova | Traveller.</p>
+            <div class="card-actions">
+              <a class="btn btn-book" data-book="Airport Pickup & Drop">Book Now</a>
+              <a class="btn btn-ghost" data-enq="Airport Pickup & Drop">Enquire</a>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <img src="cab.png" alt="Local Sightseeing" />
+          <div class="card-body">
+            <h3>Local Sightseeing</h3>
+            <p>Srinagar, Gulmarg, Pahalgam, Sonamarg day trips.</p>
+            <div class="card-actions">
+              <a class="btn btn-book" data-book="Local Sightseeing">Book Now</a>
+              <a class="btn btn-ghost" data-enq="Local Sightseeing">Enquire</a>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <img src="cab.png" alt="Outstation Rides" />
+          <div class="card-body">
+            <h3>Outstation Rides</h3>
+            <p>Flexible plans & clean cars. Professional drivers.</p>
+            <div class="card-actions">
+              <a class="btn btn-book" data-book="Outstation Rides">Book Now</a>
+              <a class="btn btn-ghost" data-enq="Outstation Rides">Enquire</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="note">Vehicles available: Swift Dzire · Scorpio · Innova · Traveller (7/9/12 seater)</div>
+    </div>
+  </section>
+
+  <!-- Winter Wear -->
+  <section id="winter" class="section">
+    <div class="container">
+      <div class="section-head">
+        <h2>Winter Wear</h2>
+        <a class="btn btn-ghost" href="https://wa.me/917870639642?text=Enquiry%20about%20winter%20wear.">Enquire Now</a>
+      </div>
+      <div class="grid grid-4">
+        <div class="card">
+          <img src="shawl.png" alt="Pashmina Shawl" />
+          <div class="card-body">
+            <h3>Pashmina Shawl</h3>
+            <p>Classic warmth & elegance. Gift ready.</p>
+            <div class="card-actions">
+              <a class="btn btn-buy" data-whats="Pashmina Shawl">Buy Now</a>
+              <a class="btn btn-ghost" data-enq="Pashmina Shawl">Enquire</a>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <img src="kurta.png" alt="Kashmiri Kurtas" />
+          <div class="card-body">
+            <h3>Kashmiri Kurtas</h3>
+            <p>Handcrafted embroidery. Multiple sizes.</p>
+            <div class="card-actions">
+              <a class="btn btn-buy" data-whats="Kashmiri Kurtas">Buy Now</a>
+              <a class="btn btn-ghost" data-enq="Kashmiri Kurtas">Enquire</a>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <img src="mat.png" alt="Woollen Caps & Gloves" />
+          <div class="card-body">
+            <h3>Woollen Caps & Gloves</h3>
+            <p>Cozy essentials for winter travel.</p>
+            <div class="card-actions">
+              <a class="btn btn-buy" data-whats="Woollen Caps & Gloves">Buy Now</a>
+              <a class="btn btn-ghost" data-enq="Woollen Caps & Gloves">Enquire</a>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <img src="shawl.png" alt="Long Coats" />
+          <div class="card-body">
+            <h3>Long Coats</h3>
+            <p>Warm, durable & stylish outerwear.</p>
+            <div class="card-actions">
+              <a class="btn btn-buy" data-whats="Long Coats">Buy Now</a>
+              <a class="btn btn-ghost" data-enq="Long Coats">Enquire</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Adventures -->
+  <section id="adventures" class="section section-alt">
+    <div class="container">
+      <div class="section-head">
+        <h2>Adventures</h2>
+        <a class="btn btn-primary" href="https://wa.me/917870639642?text=I%20want%20to%20book%20an%20adventure%20activity%20in%20Kashmir.">Book Now</a>
+      </div>
+      <div class="grid grid-3">
+        <div class="card">
+          <img src="shilajit.png" alt="Gulmarg Gondola" />
+          <div class="card-body">
+            <h3>Gulmarg Gondola</h3>
+            <p>Snow views & cable car fun for all ages.</p>
+            <div class="card-actions">
+              <a class="btn btn-book" data-book="Gulmarg Gondola">Book Now</a>
+              <a class="btn btn-ghost" data-enq="Gulmarg Gondola">Enquire</a>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <img src="shilajit.png" alt="River Rafting" />
+          <div class="card-body">
+            <h3>River Rafting</h3>
+            <p>Adrenaline rush with trained experts.</p>
+            <div class="card-actions">
+              <a class="btn btn-book" data-book="River Rafting">Book Now</a>
+              <a class="btn btn-ghost" data-enq="River Rafting">Enquire</a>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <img src="shilajit.png" alt="Trekking & Camping" />
+          <div class="card-body">
+            <h3>Trekking & Camping</h3>
+            <p>Scenic trails, tents & starry nights.</p>
+            <div class="card-actions">
+              <a class="btn btn-book" data-book="Trekking & Camping">Book Now</a>
+              <a class="btn btn-ghost" data-enq="Trekking & Camping">Enquire</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Hotels & Resorts -->
+  <section id="hotels" class="section">
+    <div class="container">
+      <div class="section-head">
+        <h2>Hotels & Resorts</h2>
+        <a class="btn btn-ghost" href="https://wa.me/917870639642?text=Enquiry%20about%20hotels%20and%20resorts%20in%20Kashmir.">Enquire Now</a>
+      </div>
+      <div class="grid grid-3">
+        <div class="card">
+          <img src="homestay.png" alt="Houseboat Stay" />
+          <div class="card-body">
+            <h3>Houseboat Stay</h3>
+            <p>Dal Lake houseboats with breakfast & dinner.</p>
+            <div class="card-actions">
+              <a class="btn btn-book" data-book="Houseboat Stay">Book Now</a>
+              <a class="btn btn-ghost" data-enq="Houseboat Stay">Enquire</a>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <img src="homestay.png" alt="Gulmarg Resorts" />
+          <div class="card-body">
+            <h3>Gulmarg Resorts</h3>
+            <p>Snow-side comfort & easy gondola access.</p>
+            <div class="card-actions">
+              <a class="btn btn-book" data-book="Gulmarg Resorts">Book Now</a>
+              <a class="btn btn-ghost" data-enq="Gulmarg Resorts">Enquire</a>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <img src="homestay.png" alt="Pahalgam Hotels" />
+          <div class="card-body">
+            <h3>Pahalgam Hotels</h3>
+            <p>Riverside serenity & pine-filled air.</p>
+            <div class="card-actions">
+              <a class="btn btn-book" data-book="Pahalgam Hotels">Book Now</a>
+              <a class="btn btn-ghost" data-enq="Pahalgam Hotels">Enquire</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Floating CTA -->
+  <div class="floating-cta">
+    <a class="btn btn-whatsapp" href="https://wa.me/917870639642?text=Hi%20Sheen%20Safar%2C%20I%20have%20an%20enquiry.">WhatsApp</a>
+    <a class="btn btn-call" href="tel:+917760666008">Call</a>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div>
+        <h4>Sheen Safar</h4>
+        <p>Dry Fruits • Tours & Travels • Winter Wear • Adventures • Hotels & Resorts</p>
+      </div>
+      <div class="footer-actions">
+        <a class="btn btn-ghost btn-xs" href="mailto:gaurav.2897@gmail.com">Email</a>
+        <a class="btn btn-ghost btn-xs" href="https://wa.me/917870639642?text=Hi%20Sheen%20Safar%2C%20I%20have%20an%20enquiry.">WhatsApp</a>
+        <a class="btn btn-ghost btn-xs" href="#home">Back to top ↑</a>
+      </div>
+    </div>
+    <div class="container small">© <span id="year"></span> Sheen Safar. All rights reserved.</div>
   </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
