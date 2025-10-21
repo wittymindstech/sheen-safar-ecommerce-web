@@ -1,50 +1,39 @@
-// --- Config ---
-const phoneCab = "917870639642";   // WhatsApp for cab enquiries (no +)
-const phoneShop = "917870639642";  // WhatsApp for dry fruit orders (can be same)
-
-// Build WhatsApp link including current page URL
-function buildWaLink(phone, message) {
-  const url = typeof window !== "undefined" ? window.location.href : "";
-  const body = `${message}\n\nPage link: ${url}\n\nPlease confirm. Thanks!`;
-  return `https://wa.me/${phone}?text=${encodeURIComponent(body)}`;
+// Mobile Nav Toggle
+const navToggle = document.getElementById('navToggle');
+const nav = document.getElementById('nav');
+if (navToggle) {
+  navToggle.addEventListener('click', () => nav.classList.toggle('open'));
 }
 
-// Attach WA to generic enquiry buttons (data-wa)
-document.querySelectorAll("[data-wa]").forEach((el) => {
-  const extra = el.getAttribute("data-wa-text") || "General Enquiry";
-  el.setAttribute("href", buildWaLink(phoneCab, extra));
-  el.setAttribute("rel", "noopener");
-});
-
-// Attach WA to product Buy buttons (data-buy)
-document.querySelectorAll("[data-buy]").forEach((btn) => {
-  btn.addEventListener("click", (e) => {
-    e.preventDefault();
-    const name = btn.getAttribute("data-name") || "Product";
-    const price = btn.getAttribute("data-price") || "";
-    const pack = btn.getAttribute("data-pack") || "";
-    const msg =
-      `Order: ${name}\nPack: ${pack}\nPrice: ₹${price}\n\nQty: 1\nAddress:\nPincode:\nPayment (COD/UPI):`;
-    window.location.href = buildWaLink(phoneShop, msg);
+// Smooth scroll for internal links
+document.querySelectorAll('a[href^="#"]').forEach(a => {
+  a.addEventListener('click', e => {
+    const id = a.getAttribute('href');
+    if (id.length > 1) {
+      e.preventDefault();
+      document.querySelector(id)?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      nav?.classList.remove('open');
+    }
   });
 });
 
-// Mobile menu toggle
-const menuBtn = document.getElementById("menuBtn");
-const navLinks = document.getElementById("navLinks");
-if (menuBtn && navLinks) {
-  menuBtn.addEventListener("click", () => {
-    const open = navLinks.classList.toggle("show");
-    menuBtn.setAttribute("aria-expanded", open ? "true" : "false");
+// Dynamic year
+document.getElementById('year').textContent = new Date().getFullYear();
+
+// WhatsApp helpers (Buy / Book / Enquire)
+const WA = 'https://wa.me/917870639642?text=';
+const encode = (s) => encodeURIComponent(s);
+
+function attachWA(selector, prefix) {
+  document.querySelectorAll(selector).forEach(btn => {
+    btn.addEventListener('click', () => {
+      const item = btn.dataset.whats || btn.dataset.book || btn.dataset.enq || 'enquiry';
+      const text = `${prefix}${item}`;
+      window.location.href = WA + encode(text);
+    });
   });
-  navLinks.querySelectorAll("a").forEach((lnk) =>
-    lnk.addEventListener("click", () => {
-      navLinks.classList.remove("show");
-      menuBtn.setAttribute("aria-expanded", "false");
-    })
-  );
 }
 
-// Year
-const y = document.getElementById("year");
-if (y) y.textContent = new Date().getFullYear();
+attachWA('.btn-buy', 'Buy request: ');
+attachWA('.btn-book', 'Booking request: ');
+attachWA('.btn-ghost[data-enq]', 'Enquiry about: ');
